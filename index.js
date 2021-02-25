@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(compression());
 
-app.get('/ibpt', async (req, res) => {
+app.get('/', async (req, res) => {
 	try {
 		const { data } = await axios({
 			timeout: 60000,
